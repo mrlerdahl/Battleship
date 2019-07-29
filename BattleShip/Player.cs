@@ -9,6 +9,8 @@ namespace BattleShip
         public readonly string playerName;
         private const int power = 1;
 
+        //TODO Changes these to utilize the point class
+        // What can a Player do, create/set a ship, Sets their name, FireOnShip
         private int _x1;
         private int _x2;
         private int _y1;

@@ -6,10 +6,11 @@ namespace BattleShip
 {
     class PlayGame
     {
-
+        // This will create a new game with a 6x6 board with two players
         Board board = new Board(6, 6);
         Player playerOne = new Player("Player1");
         Player playerTwo = new Player("Player2");
+
 
         static void PlayerSetShip(Player player, Board board)
         {

@@ -4,8 +4,15 @@ using System.Text;
 
 namespace BattleShip
 {
+    //What does a ship do, has different sizes, takes damage, gets destroyed
     class Ship
     {
+        //TODO create more ship, make this one a Parent Class
+        //Carrier size 5
+        //Battleship size 4
+        //Cruiser size 3
+        //Submarine size 3
+        //Destroyer size 2
         public MapLocation _location1 { get; private set; }
         public MapLocation _location2 { get; private set; }
         

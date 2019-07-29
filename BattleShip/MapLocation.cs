@@ -14,7 +14,14 @@ namespace BattleShip
                 throw new System.Exception(x + "," + y + " is outside the bounderies of the board");
             }
         }
-
+        public static bool operator ==(MapLocation x, MapLocation y)
+        {
+            return x.Equals(y);
+        }
+        public static bool operator !=(MapLocation x, MapLocation y)
+        {
+            return !(x == y);
+        }
 
         public override bool Equals(object obj)
         {
@@ -32,16 +39,6 @@ namespace BattleShip
         public override int GetHashCode()
         {
             return X.GetHashCode() * 31 + Y.GetHashCode();
-        }
-
-        public static bool operator ==(MapLocation x, MapLocation y)
-        {
-            return x.Equals(y);
-        }
-
-        public static bool operator !=(MapLocation x, MapLocation y)
-        {
-            return !(x == y);
         }
     }
 }

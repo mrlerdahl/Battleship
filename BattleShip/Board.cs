@@ -9,6 +9,7 @@ namespace BattleShip
         public readonly int Width;
         public readonly int Height;
 
+        //TODO create a method that draws the board
         public Board(int width, int height)
         {
             Width = width;
